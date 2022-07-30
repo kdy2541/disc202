@@ -1,0 +1,17 @@
+<html>
+<head>
+  <script>
+    var info = {Jinsu:21,Chulsu:20};
+    function up(s){
+      document.querySelectorAll("button")[s-1].innerHTML+=(info.Jinsu+info.Chulsu)/2;
+      info.Jinsu+=1;
+      info.Chulsu+=1;
+    }
+  </script>
+</head>
+<body>
+  <button onclick = "up(1)">sum</button>
+  <button onclick = "up(2)">sum</button>
+  <button onclick = "up(3)">sum</button>
+</body>
+</html>

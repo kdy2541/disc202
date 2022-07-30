@@ -1,0 +1,23 @@
+<html>
+<head>
+  <script>
+    var mydata = [1,2,3,4,5];
+    var rand = Math.floor(Math.random()*101);
+    for(var i = 0; i < rand; i++){
+      mydata.push(Math.floor(Math.random()*100)+1);
+    }
+    var arrSize = mydata.length;
+    var valSum = 0;
+    for(var i = 0;i<arrSize;i++){
+      valSum += mydata[i];
+    }
+    var arrAve = valSum / arrSize;
+    mydata.push(arrSize);
+    mydata.push(valSum);
+    mydata.push(arrAve);
+    alert("Array Length : "+arrSize+" Value Sum : "+valSum+" Value Average : "+arrAve);
+  </script>
+</head>
+<body>
+</body>
+</html>

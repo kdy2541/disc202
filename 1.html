@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+    var err = 0.00000001;
+    var err2 = 1;
+    var min_ = 2;
+    var max_ = 3;
+    var result = 0;
+    var check = 0;
+    while(err2>err){
+      check += 1;
+      var tmp = min_ + (Math.random()%(max_-min_));
+      var val = Math.pow(tmp,3);
+      err2 = Math.abs(val - 10);
+      if(val>10){
+        max_ = tmp;
+      }
+      else{
+        min_ = tmp;
+      }
+      result = tmp;
+    }
+    document.write("<h1>"+check+" "+result+"</h1>");
+</script>
+</head>
+</html>

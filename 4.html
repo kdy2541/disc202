@@ -1,0 +1,24 @@
+<html>
+<head>
+  <ul>
+  <li onclick = "changeColor(0)">First</li>
+  <li onclick = "changeColor(1)">Second</li>
+  <li onclick = "changeColor(2)">Third</li>
+  </ul>
+  <style>
+    .orange {background-color:orange};
+  </style>
+  <script>
+    function changeColor(s){
+      for(var i = 0;i<3;i++){
+        document.querySelectorAll("li")[i].removeAttribute("class");
+      }
+      document.querySelectorAll("li")[s].setAttribute("class","orange");
+    }
+    
+    
+  </script>
+</head>
+<body>
+</body>
+</html>
